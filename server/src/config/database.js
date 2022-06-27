@@ -3,7 +3,7 @@ module.exports = {
     SQL: 'sql',
     MONGO: 'mongodb',
     sql: {
-        uri: process.env.DB_URI
+        uri: process.env.DB_URI.includes("postgres") ? process.env.DATABASE_URL : process.env.DB_URI
     },
     mongo: {
         uri: process.env.DB_URI
