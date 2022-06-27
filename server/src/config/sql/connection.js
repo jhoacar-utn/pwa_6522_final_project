@@ -1,7 +1,16 @@
 const { Sequelize } = require('sequelize');
 
-const { mysql } = require("../database");
+const { sql } = require("../database");
 
-const sequelize = new Sequelize(mysql.uri);
+const options = {
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    }
+}
+
+const sequelize = new Sequelize(sql.uri, options);
 
 module.exports = sequelize;
