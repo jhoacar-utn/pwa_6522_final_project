@@ -23,7 +23,7 @@ export default function App() {
   })
 
   const { isDarkMode } = globalState;
-  
+
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
   // const [isDarkMode, setIsDarkMode] = useState(true);
 
