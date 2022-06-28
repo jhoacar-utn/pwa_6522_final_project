@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///c%3A/Users/Usuario/Documents/utn/pwa_6522_final_project/.github/workflows/2-deploy.yml"
+    }
+}
